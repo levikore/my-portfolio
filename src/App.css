@@ -2,7 +2,7 @@
 
 :root{
   --primary-white: #fff;
-  --primary-green: #3aeb34;
+  --primary-green: #56fd3c;
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
@@ -120,12 +120,17 @@ nav ul li{
 .main-info h1 {
   color: var(--primary-green);
   text-transform: uppercase;
+  font-weight: bolder;
 }
 
 /*----------------TYPED TEXT----------------*/
-.typed-text{
+.typed-wrap{
   font-size: 2rem;
   color: var(--primary-white);
+}
+.typed-text{
+  color: var(--primary-green);
+  font-weight: bold;
 }
 
 /*----------------HEADER MAIN OFFER BUTTON----------------*/
@@ -142,6 +147,7 @@ nav ul li{
   text-decoration: none;
   background-color: var(--primary-hover-red);
   color: var(--primary-white);
+  font-weight: bold;
   transition: .2s ease-in-out;
 }
 
@@ -160,11 +166,24 @@ nav ul li{
 
   .main-info h1{
     font-size: 1.7rem !important;
+  }
 
+  .typed-wrap{
+    font-size: 1rem !important;
+  }
+
+  .typed-text::before{
+    content:"\A";
+    white-space: pre;
   }
 
   .typed-text{
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
+  }
+
+  .typed-text::after{
+    content:"\A";
+    white-space: pre;
   }
 
   .particles-canvas{

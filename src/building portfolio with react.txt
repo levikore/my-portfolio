@@ -1,0 +1,49 @@
+https://www.youtube.com/watch?v=vD72tRK8mC4&list=LL&index=7
+https://www.youtube.com/watch?v=1NrHkjlWVhM
+
+07/03/2021
+-Opened repository on GitHub
+-used correct naming convention "my-portfolio"
+-Cloned repository to pc using GitHub Desktop
+-Installed Node.js using: https://nodejs.org/en/
+-installed React using: https://www.techomoro.com/how-to-install-and-setup-a-react-app-on-windows-10/
+-opened project in VisualCode
+-Changed terminal from powershell to bash using: https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal
+-created react up in folder using: create-react-app .
+-deleted unnesesary icons and emoticons
+-downloaded bootstrap: npm i bootstarp
+-in App.js: import "bootstrap/dist/css/bootstrap.min.css";
+-downloaded git
+-commited project: 
+	- stage commit: git add .
+	- commit: git commit -m "Project Setup"
+	-git log
+	-git push
+- stoped at: 16:36
+-------------------------------------------------------------------------------------------
+for icons:
+https://fontawesome.com/how-to-use/on-the-web/using-with/react
+example:
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {faBars } from "@fortawesome/free-solid-svg-icons"
+...
+<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <FontAwesomeIcon icon ={faBars} style={{color:"#fff"}}/>
+</button>
+
+---------------------------------------------------------------------------------------------
+for fonts:
+https://fonts.google.com
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+...
+font-family: "Roboto Condensed", sans-serif;
+----------------------------------------------------------------------------------------------
+
+
+
+type effect:
+npm install react-typed --save
+
+particles effect:
+npm install react-particles-js
