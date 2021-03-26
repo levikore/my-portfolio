@@ -3,6 +3,7 @@
 :root{
   --primary-white: #fff;
   --primary-green: #56fd3c;
+  --secondary-green: #89ffd8;
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
@@ -117,10 +118,14 @@ nav ul li{
   z-index: 1;
 }
 
+.hello-text{
+  color: var(--secondary-green);
+}
+
 .main-info h1 {
   color: var(--primary-green);
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /*----------------TYPED TEXT----------------*/
@@ -129,7 +134,7 @@ nav ul li{
   color: var(--primary-white);
 }
 .typed-text{
-  color: var(--primary-green);
+  color: var(--primary-white);
   font-weight: bold;
 }
 
@@ -184,6 +189,10 @@ nav ul li{
   .typed-text::after{
     content:"\A";
     white-space: pre;
+  }
+
+  .btn-main-offer{
+    margin: 1rem !important;
   }
 
   .particles-canvas{

@@ -39,11 +39,11 @@ https://fonts.google.com
 ...
 font-family: "Roboto Condensed", sans-serif;
 ----------------------------------------------------------------------------------------------
-
-
-
 type effect:
 npm install react-typed --save
-
+---------------------------------------------------------------------------------------------
 particles effect:
 npm install react-particles-js
+
+demo:
+https://vincentgarreau.com/particles.js/

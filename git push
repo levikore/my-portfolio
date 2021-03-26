@@ -1,0 +1,29 @@
+[33mcommit 70c9c17e8c83c8df13a1b2c02c97dbf1184a4a93[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: levikore <41550958+levikore@users.noreply.github.com>
+Date:   Fri Mar 26 03:48:15 2021 +0300
+
+    changed typed header in Header
+
+[33mcommit afaded7f8718dccf54654ed0ab8fba67d435ed74[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: levikore <41550958+levikore@users.noreply.github.com>
+Date:   Wed Mar 24 05:56:05 2021 +0200
+
+    Header Complete
+
+[33mcommit 825293b515d9fe5c1ca8fd779303a1726396f7a3[m
+Author: levikore <41550958+levikore@users.noreply.github.com>
+Date:   Sun Mar 21 02:22:13 2021 +0200
+
+    Added Navbar
+
+[33mcommit c3529d8ba5b17465081bf90206bc3b9df85da991[m
+Author: levikore <41550958+levikore@users.noreply.github.com>
+Date:   Mon Mar 8 00:59:31 2021 +0200
+
+    Project Setup
+
+[33mcommit fe9e5b9fdea3aecb3d45f71bdfc1204439b84529[m
+Author: levikore <41550958+levikore@users.noreply.github.com>
+Date:   Sun Mar 7 10:59:59 2021 +0200
+
+    Initial commit
