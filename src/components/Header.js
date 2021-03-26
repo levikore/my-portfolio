@@ -20,7 +20,7 @@ const Header = () => {
                         loop
                     /> position
                 </p>
-                <a href="#" className="btn-main-offer">Contact Me!</a>
+                <a href="#" className="btn-main-offer">Contact Me</a>
                 <FontAwesomeIcon icon={faChevronDown} style={{color:"#fff", opacity:0.7}}/>
             </div>
         </div>
