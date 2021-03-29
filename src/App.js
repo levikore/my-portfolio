@@ -8,11 +8,11 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
+      <Navbar />
       <Particles
         className="particles-canvas"
         params={particlesConfig}
       />
-      <Navbar />
       <Header />
     </>
   );
