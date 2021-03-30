@@ -13,8 +13,10 @@ const Header = () => {
     return (
         <div className="header-wraper">
             <div className="main-info">
-                <h3 className="hello-text">Hi, I'm</h3>
-                <h1>Levi Korenblit</h1>
+                <div className="hello-text-wraper">
+                    <h3>Hi, I'm</h3>
+                    <h1>Levi Korenblit</h1>
+                </div>
                 <p className="typed-wrap">
                     Looking for a <Typed
                         className="typed-text"
@@ -39,7 +41,7 @@ const Header = () => {
                 </div>
 
                 <div className="arrow-down">
-                <FontAwesomeIcon icon={faChevronDown} style={{ color: "#fff"}} />
+                    <FontAwesomeIcon icon={faChevronDown} style={{ color: "#fff" }} />
                 </div>
             </div>
         </div>

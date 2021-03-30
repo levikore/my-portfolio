@@ -126,7 +126,13 @@ nav ul li {
     z-index: 1;
 }
 
-.hello-text {
+.hello-text-wraper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.main-info h3 {
     color: var(--secondary-green);
 }
 
@@ -214,11 +220,14 @@ nav ul li {
     width: 100vw;
     z-index: 1;
 }
-
 /*--------------------------------------------*/
-@media(max-width: 768px) {
+@media only screen 
+and (max-width: 48rem) {
     .navbar-brand {
         width: 7rem;
+    }
+    .main-info h3 {
+        font-size: 0.9rem !important;
     }
     .main-info h1 {
         font-size: 1.7rem !important;
@@ -243,4 +252,37 @@ nav ul li {
     .particles-canvas {
         display: none;
     }
+}
+
+@media only screen 
+and (max-device-width: 823px) 
+and (orientation: landscape){
+    .hello-text-wraper{
+        flex-direction: row;
+    }
+
+    .main-info h1 {
+        font-size: 1.2rem !important;
+    }
+
+    .typed-wrap {
+        font-size: 0.8rem !important;
+    }
+    .typed-text::before {
+        content: "\A";
+        white-space: nowrap;
+    }
+    .typed-text {
+        font-size: 0.9rem !important;
+    }
+    .typed-text::after {
+        content: "\A";
+        white-space: nowrap;
+    }
+    .btn-main-offer{
+        padding: 0.1rem 0.15rem 0.15rem 0.15rem;
+        color: var(--primary-white);
+       
+    }
+
 }
