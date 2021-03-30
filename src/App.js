@@ -4,6 +4,7 @@ import Particles from "react-particles-js";
 import particlesConfig from "./config/configParticles";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         params={particlesConfig}
       />
       <Header />
+      <AboutMe/>
     </>
   );
 }

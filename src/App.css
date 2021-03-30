@@ -207,7 +207,7 @@ nav ul li {
 
 /*----------------Arrow Down----------------*/
 .arrow-down{
-    opacity: 0.9;
+    opacity: 0.8;
     position: absolute;
     bottom: 0;
 }
@@ -220,6 +220,53 @@ nav ul li {
     width: 100vw;
     z-index: 1;
 }
+
+/********************COMPONENT***************************************/
+.component-wrapper{
+    position: relative;
+    height: var(--header-height);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.component-title-wrapper{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.component-title-wrapper h1{
+    margin:0;
+}
+
+.component-title-wrapper h2{
+    margin:0;
+}
+
+.component-content{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume-box{
+    display: flex;
+    position:static;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+}
+
+
+
+
 /*--------------------------------------------*/
 @media only screen 
 and (max-width: 48rem) {
