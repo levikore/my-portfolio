@@ -128,7 +128,7 @@ nav ul li {
 
 .hello-text-wraper{
     display: flex;
-    position: relative;
+    position: static;
     flex-direction: column;
 }
 
@@ -159,6 +159,7 @@ nav ul li {
 /*----------------HEADER MAIN OFFER BUTTON----------------*/
 
 .btn-main-offer {
+    position: static;
     border: 1px solid var(--primary-red);
     text-transform: uppercase;
     border-radius: 0;
@@ -183,10 +184,7 @@ nav ul li {
 
 .social-media {
     display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: static;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -228,7 +226,7 @@ nav ul li {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-.component-title-wrapper{
+.component-title-area{
     display: flex;
     position: static;
     flex-direction: column;
@@ -238,13 +236,15 @@ nav ul li {
     margin: 1.5rem;
 }
 
-.component-title-wrapper h1{
+.component-title{
     margin:0;
 }
 
-.component-title-wrapper h2{
-    margin:0;
+.component-title::after{
+    content: "\A....";
+    white-space: pre;
 }
+
 
 .component-content{
     display: flex;
