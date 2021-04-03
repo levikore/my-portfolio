@@ -2,34 +2,21 @@ import React from "react"
 //REACT FONT AWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 //REACT VERTICAL TIME LINE
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css"
 import timelineElements from "../config/timelineElements";
 
-
-
-const educationList = [
-    {
-        "name": "The Academic College of Tel Aviv- Yaffo",
-        "from": '2016', "to": "2021", "degree": "BSc", "subject": "Computer Science"
-    },
-    {
-        "name": "Ort Hermelin college, Netanya",
-        "from": '2012', "to": "2013", "degree": "Practical Engineer", "subject": "Computer Science"
-    }
-];
-
 const TimeLine = () => {
-    let workIconStyles = { background: "#06D6A0" }
-    let schoolIconStyles = { background: "#f9c74f" }
+    let workIconStyles = { background: "#f9c74f" }
+    let schoolIconStyles = { background: "#06D6A0" }
 
-    let workIcon = <FontAwesomeIcon icon={faBriefcase} />
-    let schoolIcon = <FontAwesomeIcon icon={faGraduationCap} />
+    let workIcon = <FontAwesomeIcon icon={faLaptop} className="timeline-icon" />
+    let schoolIcon = <FontAwesomeIcon icon={faGraduationCap} className="timeline-icon"  />
     return (
         <div>
-            <h2 className="component-title">Timeline</h2>
+            
             <VerticalTimeline>
                 {
                     timelineElements.map((element) => {
@@ -57,7 +44,7 @@ const TimeLine = () => {
                                 {showButton && (
                                     <a
                                         className={`timeline-button ${isWorkIcon ? "workButton" : "schoolButton"}`}
-                                        href="/">
+                                        href={element.ref}>
                                         {element.buttonText}
                                     </a>
                                 )}
@@ -75,7 +62,7 @@ const TimeLine = () => {
 
 const AboutMe = () => {
     return (
-        <div className="component-wrapper">
+        <div className="component-wrapper" id="section-about-me">
             <div className="component-content">
                 <div className="component-title-area">
                     <h2 className="component-title">About Me</h2>

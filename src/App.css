@@ -249,7 +249,6 @@ nav ul li {
     position: static;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 @media only screen 
@@ -353,23 +352,28 @@ and (orientation: landscape){
     color: white;
   }
 
+  .timeline-button:hover{
+    color: white;
+    font-style: bold;
+  }
+
   .workButton {
-    background-color: #06d6a0;
-  }
-
-  .workButton:hover {
-    background-color: #0ac593;
-  }
-
-  .schoolButton {
     background-color: #f9c74f;
   }
 
-  .schoolButton:hover {
+  .workButton:hover {
     background-color: #f3bc3c;
   }
 
-  @media only screen and (max-width: 1700px) {
+  .schoolButton {
+    background-color: #06d6a0;
+  }
+
+  .schoolButton:hover {
+    background-color: #0ac593;
+  }
+
+  @media only screen and (max-width: 1024px) {
     .vertical-timeline-element-date {
       display: block !important;
       float: none !important;
