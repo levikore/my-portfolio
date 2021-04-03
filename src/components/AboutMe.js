@@ -1,7 +1,14 @@
 import React from "react"
 //REACT FONT AWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+//REACT VERTICAL TIME LINE
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css"
+import timelineElements from "../config/timelineElements";
+
+
 
 const educationList = [
     {
@@ -14,16 +21,56 @@ const educationList = [
     }
 ];
 
-class Education extends React.Component {
-    render() {
-        /*const listItems = educationList.map((d) =>
-            <li key={d.name}>{d.name}</li>);*/
+const TimeLine = () => {
+    let workIconStyles = { background: "#06D6A0" }
+    let schoolIconStyles = { background: "#f9c74f" }
 
-        const listItems = <p>temp</p>;
+    let workIcon = <FontAwesomeIcon icon={faBriefcase} />
+    let schoolIcon = <FontAwesomeIcon icon={faGraduationCap} />
+    return (
+        <div>
+            <h2 className="component-title">Timeline</h2>
+            <VerticalTimeline>
+                {
+                    timelineElements.map((element) => {
+                        let isWorkIcon = element.icon === "work"
+                        let showButton =
+                            element.buttonText !== undefined &&
+                            element.buttonText !== null &&
+                            element.buttonText !== ""
+                        return (
+                            <VerticalTimelineElement 
+                                key={Math.random().toString(36).substr(2, 9)}
+                                date={element.date}
+                                dateClassName="timeline-date"
+                                iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+                                icon={isWorkIcon ? workIcon : schoolIcon}
+                            >
 
-        return (listItems);
-    }
-}
+                                <h3 className="vertical-timeline-element-title">
+                                    {element.title}
+                                </h3>
+                                <h5 className="vertical-timeline-element-subtitle">
+                                    {element.location}
+                                </h5>
+                                <p id="timeline-description">{element.description}</p>
+                                {showButton && (
+                                    <a
+                                        className={`timeline-button ${isWorkIcon ? "workButton" : "schoolButton"}`}
+                                        href="/">
+                                        {element.buttonText}
+                                    </a>
+                                )}
+
+                            </VerticalTimelineElement>
+
+                        );
+                    })
+                }
+            </VerticalTimeline>
+        </div>
+    );
+};
 
 
 const AboutMe = () => {
@@ -32,7 +79,6 @@ const AboutMe = () => {
             <div className="component-content">
                 <div className="component-title-area">
                     <h2 className="component-title">About Me</h2>
-
                     <p>
                         I am a BSc computer science student at The Academic College of Tel Aviv-
                         Yaffo, with a remainder of one course. due to graduate in 2021.
@@ -44,17 +90,11 @@ const AboutMe = () => {
                     </p>
                 </div>
 
-                <div id="resume-box">
-                    <Education />
-
-                    <p>
-                        blabla
-                    </p>
-                </div>
+                <div id="timeline-container"><TimeLine /></div>
 
             </div>
         </div>
     )
-}
+};
 
 export default AboutMe;

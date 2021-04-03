@@ -47,3 +47,9 @@ npm install react-particles-js
 
 demo:
 https://vincentgarreau.com/particles.js/
+
+----------------------------------------------------------------------------------------------
+
+time line:
+npm i react-vertical-timeline-component
+https://www.npmjs.com/package/react-vertical-timeline-component
