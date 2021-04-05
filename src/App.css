@@ -8,7 +8,7 @@
     --primary-red: #ef4035;
     --primary-hover-red: #f33501;
     --primary-blue:#3da3d5;
-    --header-height: 82vh
+    --header-height: 84vh
 }
 
 body {
@@ -262,7 +262,7 @@ nav ul li {
     background: var(--primary-blue);
     font-size: 16px;
     color: rgb(53, 53, 53);
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    /*box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;*/
 }
 
 
