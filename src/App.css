@@ -2,10 +2,12 @@
 :root {
     --primary-white: #fff;
     --primary-green: #56fd3c;
-    --secondary-green: #89ffd8;
+    --secondary-green: #06d6a0;
+    --secondary-hover-green:#0ac593;
     --primary-dark: rgba(255, 255, 255, 0);
     --primary-red: #ef4035;
     --primary-hover-red: #f33501;
+    --primary-blue:#3da3d5;
     --header-height: 82vh
 }
 
@@ -161,11 +163,12 @@ nav ul li {
     border: 1px solid var(--primary-red);
     text-transform: uppercase;
     border-radius: 0;
-    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem !important;
+    border-radius: 5px;
     color: var(--primary-white);
     margin: 0.5rem;
-    transition: transform .2s;
-    /* Animation */
+
+    transition: all .2s ease-in-out;
 }
 
 .btn-main-offer:hover {
@@ -173,8 +176,9 @@ nav ul li {
     background-color: var(--primary-hover-red);
     color: var(--primary-white);
     font-weight: bold;
-    transition: .2s ease-in-out;
-    transform: scale(1.5);
+    
+
+    transform: scale(1.2);
 }
 
 
@@ -188,15 +192,14 @@ nav ul li {
 }
 
 .btn-social-media {
-    /*border: 1px solid var(--primary-red);*/
     border-radius: 0;
     padding: 0.2rem;
     margin: 0.1rem;
-    transition: transform .2s;
+
+    transition: all .2s ease-in-out;
 }
 
 .btn-social-media:hover {
-    transition: .2s ease-in-out;
     transform: scale(1.5);
 }
 
@@ -219,13 +222,23 @@ nav ul li {
 /********************COMPONENT***************************************/
 .component-wrapper{
     position: relative;
-    display: inline-block;
+    background-position: center;
+    background-size:cover;
+}
+
+.component-content{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: "Roboto Condensed", sans-serif;
+    z-index: 1;
 }
 
 .component-title-area{
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -243,12 +256,22 @@ nav ul li {
     white-space: pre;
 }
 
+.component-body-area{
+    width: 100% !important;
+    display: inline-block;
+    background: var(--primary-blue);
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+}
 
-.component-content{
-    display: flex;
-    position: static;
-    flex-direction: column;
-    justify-content: center;
+
+.component-button{/**Note: use for buttons, doesnt apply to timelene and header buttons */
+    border-radius: 5px;
+    color: var(--primary-white);
+    margin: 0.5rem;
+    
+    transition: all .2s ease-in-out;
 }
 
 @media only screen 
@@ -317,16 +340,6 @@ and (orientation: landscape){
 
 }
 
-
-
-/********************ABOUT ME***************************************/
-#timeline-container{
-    background: #3da3d5;
-    font-size: 16px;
-    color: rgb(53, 53, 53);
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-}
-
 /*----------------TIMELINE----------------*/
 .vertical-timeline-element-title{
     padding-top: 0.25em;
@@ -354,7 +367,6 @@ and (orientation: landscape){
 
   .timeline-button:hover{
     color: white;
-    font-style: bold;
   }
 
   .workButton {
@@ -366,11 +378,11 @@ and (orientation: landscape){
   }
 
   .schoolButton {
-    background-color: #06d6a0;
+    background-color: var(--secondary-green);
   }
 
   .schoolButton:hover {
-    background-color: #0ac593;
+    background-color: var(--secondary-hover-green);
   }
 
   @media only screen and (max-width: 1024px) {
