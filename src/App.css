@@ -8,8 +8,13 @@
     --primary-red: #ef4035;
     --primary-hover-red: #f33501;
     --primary-blue:#3da3d5;
+    --secondary-blue:rgb(201, 251, 255);
     --header-height: 84vh
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     font-family: "Roboto Condensed", sans-serif;
@@ -351,7 +356,7 @@ and (orientation: landscape){
   }
 
   .timeline-date {
-    color: rgb(201, 251, 255);
+    color: var(--secondary-blue);
   }
 
   #timeline-description {
@@ -394,4 +399,107 @@ and (orientation: landscape){
     }
   }
 
-/*--------------------------------------------*/
+/*----------------SKILL TABLE----------------*/
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size:1.2rem;
+}
+
+.skill-box{
+    padding:1rem;
+    color:var(--secondary-blue);
+}
+
+.skill-box:hover .skill-img{
+    transform: translateY(-10px);
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width:35px;
+
+}
+
+.skill-title{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0.5rem;
+    margin-bottom:0.5rem;
+    position:relative;
+}
+
+.skill-title::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right:50%;
+    width:0;
+    height:4px;
+    border-radius: 2px 0 0 2px;
+    background-color: var(--primary-green);
+    transition: .5s;
+}
+
+.skill-title::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:0;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color: var(--primary-green);
+    transition: .5s;
+}
+
+.skill-img{
+    width: 90px;
+    height: 90px;
+    position:relative;
+    border-radius: 45px;
+    background-color:var(--secondary-blue);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.skill-img::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:90px;
+    background: rgba(100, 100, 100, 0.2);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3{
+    color:#fff;
+    margin-top:0.5rem;
+}
+
+.skill-icon{
+    z-index: 2;
+}
+
+@media only screen and (max-width: 990px){
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+}
+

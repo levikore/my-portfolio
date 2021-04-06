@@ -2,25 +2,6 @@ import React from "react"
 import Component from "./Component"
 import TimeLine from "./TimeLine";
 
-/*const AboutMe = () => {
-    return (
-        <div className="component-wrapper" id="section-about-me">
-            <div className="component-content">
-                <div className="component-title-area">
-                    <h2 className="component-title">About Me</h2>
-                    <p>
-                       
-                    </p>
-                </div>
-
-                
-
-            </div>
-        </div>
-    )
-}
-<div id="timeline-container"><TimeLine /></div>*/
-
 const AboutMe = () => {
     return (
         <Component
