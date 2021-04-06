@@ -1,6 +1,7 @@
 import React from "react"
 import Component from "./Component"
 import skillsElements from "../config/skillsElements";
+import paragraphContent from "../config/paragraphContent";
 
 const SkillsTable = () => {
     return (
@@ -30,7 +31,7 @@ const Skills = () => {
         <Component
             id={"section-skills"}
             title={"Skills"}
-            paragraph={`Witness my skills Mortals!!!`}
+            paragraph={paragraphContent.skills}
             componentBody={<SkillsTable />}
         />
     )

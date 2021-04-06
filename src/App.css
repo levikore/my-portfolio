@@ -413,7 +413,7 @@ and (orientation: landscape){
 
 .skill-box{
     padding:1rem;
-    color:var(--secondary-blue);
+    color:#fff;
 }
 
 .skill-box:hover .skill-img{
