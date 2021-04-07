@@ -9,7 +9,7 @@
     --primary-hover-red: #f33501;
     --primary-blue:#3da3d5;
     --secondary-blue:rgb(201, 251, 255);
-    --header-height: 84vh
+    --header-height: 85vh
 }
 
 html {
@@ -116,6 +116,7 @@ nav ul li {
     background-size: cover;
     background-position: center;
     height: var(--header-height);
+    /*box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;*/
 }
 
 .main-info {
@@ -345,7 +346,7 @@ and (orientation: landscape){
 
 }
 
-/*----------------TIMELINE----------------*/
+/************************TIMELINE*************************/
 .vertical-timeline-element-title{
     padding-top: 0.25em;
 }
@@ -399,7 +400,7 @@ and (orientation: landscape){
     }
   }
 
-/*----------------SKILL TABLE----------------*/
+/************************SKILL GRID*************************/
 .skills-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

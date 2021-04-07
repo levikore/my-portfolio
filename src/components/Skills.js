@@ -30,7 +30,7 @@ const Skills = () => {
     return (
         <Component
             id={"section-skills"}
-            title={"Skills"}
+            title={"My Skills"}
             paragraph={paragraphContent.skills}
             componentBody={<SkillsTable />}
         />
