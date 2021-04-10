@@ -3,7 +3,7 @@ import Component from "./Component"
 import skillsElements from "../config/skillsElements";
 import paragraphContent from "../config/paragraphContent";
 
-const SkillsTable = () => {
+const SkillsGrid = () => {
     return (
         <div className="skills-container">
             {
@@ -32,7 +32,7 @@ const Skills = () => {
             id={"section-skills"}
             title={"My Skills"}
             paragraph={paragraphContent.skills}
-            componentBody={<SkillsTable />}
+            componentBody={<SkillsGrid />}
         />
     )
 };

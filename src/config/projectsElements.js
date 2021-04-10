@@ -30,3 +30,5 @@ let projectsElements = [
         links:[],
     },
 ];
+
+export default projectsElements;
