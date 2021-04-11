@@ -515,6 +515,7 @@ and (orientation: landscape){
 /************************Project Card*************************/
 
 .card{
+    max-width:25rem;
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.3) !important;
     transition: transform 0.5s ease;
     border-radius: 25px !important;
@@ -527,7 +528,6 @@ and (orientation: landscape){
 
     background-image: linear-gradient(120deg, #fdfbfb 30%, #e7e7e7 70%);
     transition: background-color 1000ms linear;
-    transform: rotate(1deg);
 }
 
 .card-body{
@@ -553,7 +553,7 @@ and (orientation: landscape){
     text-align: center;
     padding: 0.1rem 80px;
     font-size:0.9rem;
-    max-height: 8rem;
+    height: 8rem;
 }
 
 .tech-item{
@@ -572,7 +572,7 @@ and (orientation: landscape){
 }
 
 .card-img-top{
-    max-width: 15rem;
+    width:100%;
     height: 10rem;
     border-radius: 15px;
     transform: scale(1);
@@ -580,7 +580,7 @@ and (orientation: landscape){
 }
 
 .card:hover > .overflow>.card-img-top{
-    transform:scale(1.1) rotate(3.5deg);
+    transform:scale(1.1);
 }
 
 @media only screen and (max-width: 1366px){
