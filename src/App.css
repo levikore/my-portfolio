@@ -526,11 +526,17 @@ and (orientation: landscape){
 
     background-image: linear-gradient(120deg, #fdfbfb 30%, #e7e7e7 70%);
     transition: background-color 1000ms linear;
+    transform: rotate(3deg);
 }
 
 .card-body{
     padding:3rem 0 !important;
+    border: #282c34;
     
+}
+
+.card-title{
+    font-weight: bold;
 }
 
 .card-text{
@@ -566,12 +572,13 @@ and (orientation: landscape){
 .card-img-top{
     max-width: 15rem;
     height: 10rem;
+    border-radius: 15px;
     transform: scale(1);
     transition: transform 0.5s ease;
 }
 
 .card:hover > .overflow>.card-img-top{
-    transform:scale(1.8);
+    transform:scale(1.1) rotate(3.5deg);
 }
 
 @media only screen and (max-width: 1366px){
