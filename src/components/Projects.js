@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
                         })
                     }
                 </div>
-                <a href="#!" className="btn btn-primary">View</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View</button>
             </div>
         </div>
     );

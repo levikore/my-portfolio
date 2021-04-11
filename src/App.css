@@ -147,8 +147,8 @@ nav ul li {
     color: var(--primary-green);
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 80px;
 }
-
 
 /*----------------TYPED TEXT----------------*/
 
@@ -517,6 +517,7 @@ and (orientation: landscape){
 .card{
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.3) !important;
     transition: transform 0.5s ease;
+    border-radius: 25px !important;
 
     background-image: linear-gradient(120deg, #fdfbfb 0%, #e7e7e7 100%);
 }
@@ -526,7 +527,7 @@ and (orientation: landscape){
 
     background-image: linear-gradient(120deg, #fdfbfb 30%, #e7e7e7 70%);
     transition: background-color 1000ms linear;
-    transform: rotate(3deg);
+    transform: rotate(1deg);
 }
 
 .card-body{
@@ -566,6 +567,7 @@ and (orientation: landscape){
 }
 
 .overflow{
+    border-radius: 25px !important;
     overflow: hidden;
 }
 
