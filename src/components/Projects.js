@@ -9,17 +9,23 @@ const ProjectCard = (props) => {
             <div className="overflow">
                 <img
                     className="card-img-top"
-                    src="https://mdbootstrap.com/img/new/standard/nature/187.jpg"
-                    alt="..."
+                    src={props.coverImg}
+                    alt="X"
                 />
             </div>
             <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">{props.name}</h5>
                 <p className="card-text">
-                    Some quick example text to build on the card title and make up the bulk
-                    of the card's content.
-                 </p>
-                <a href="#!" className="btn btn-primary">Button</a>
+                    {props.summary}
+                </p>
+                <div className="card-tech-grid">
+                    {
+                        props.tech.map((tech) => {
+                            return (<p key={tech} className="tech-item">{tech}</p>);
+                        })
+                    }
+                </div>
+                <a href="#!" className="btn btn-primary">View</a>
             </div>
         </div>
     );
@@ -31,7 +37,12 @@ const ProjectsGrid = () => {
             {
                 projectsElements.map((element) => {
                     return (
-                        <ProjectCard />
+                        <ProjectCard key={element.name}
+                            coverImg={element.coverImg}
+                            name={element.name}
+                            summary={element.summary}
+                            tech={element.tech}
+                        />
                     );
                 })
             }
