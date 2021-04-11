@@ -8,6 +8,8 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 
+import ProjectModal from "./components/ProjectModal";
+
 function App() {
   return (
     <>
@@ -20,6 +22,7 @@ function App() {
       <AboutMe/>
       <Skills/>
       <Projects/>
+      <ProjectModal/>
     </>
   );
 }

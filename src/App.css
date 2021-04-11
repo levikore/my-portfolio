@@ -9,7 +9,8 @@
     --primary-hover-red: #f33501;
     --primary-blue:#3da3d5;
     --secondary-blue:rgb(201, 251, 255);
-    --header-height: 85vh
+    --header-height: 85vh;
+    --card-radius: 25px;
 }
 
 html {
@@ -230,6 +231,7 @@ nav ul li {
     position: relative;
     background-position: center;
     background-size:cover;
+    background-image: #fdfbfb 
 }
 
 .component-content{
@@ -518,7 +520,7 @@ and (orientation: landscape){
     max-width:25rem;
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.3) !important;
     transition: transform 0.5s ease;
-    border-radius: 25px !important;
+    border-radius: var(--card-radius) !important;
 
     background-image: linear-gradient(120deg, #fdfbfb 0%, #e7e7e7 100%);
 }
@@ -554,6 +556,7 @@ and (orientation: landscape){
     padding: 0.1rem 80px;
     font-size:0.9rem;
     height: 8rem;
+    font-size: 15px;
 }
 
 .tech-item{
@@ -562,19 +565,18 @@ and (orientation: landscape){
     border-bottom: 0.5px solid #000000;
     border-left:  0.5px solid #000000;
     border-right:  0.5px solid #000000;;
-    background-color: var(--primary-blue);
-    color: #fff;
+    background-color: rgb(33, 43, 61);
+    color: rgb(255, 255, 255);
 }
 
 .overflow{
-    border-radius: 25px !important;
+    border-radius: var(--card-radius) var(--card-radius)  0px 0px !important;
     overflow: hidden;
 }
 
 .card-img-top{
     width:100%;
     height: 10rem;
-    border-radius: 15px;
     transform: scale(1);
     transition: transform 0.5s ease;
 }

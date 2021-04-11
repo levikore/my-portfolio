@@ -1,16 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faJava, faCss3Alt, faHtml5, faPython, faNode, faJsSquare, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
-import img01 from "./project-imgs/ParkGuard/0.png"
-import img02 from "./project-imgs/MagicGit/0.png"
+import cover1 from "./project-imgs/ParkGuard/cover.png"
+import cover2 from "./project-imgs/MagicGit/cover.png"
+import cover3 from "./project-imgs/DominoLocalServer/cover.png"
 
 let projectsElements = [
     {
         id: 1,
         name: "ParkGuard",
-        coverImg: img01,
+        coverImg: cover1,
         pictures: [],
-        tech: ["Java", "Python", "OpenCV", "AWS S3", "AWS Cognito", "AWS Lambda"],
+        tech: ["Java", "Python", "OpenCV", "AWS S3"],
         summary:"blablaba",
         paragraph: "blablablaba",
         links: [],
@@ -18,7 +19,7 @@ let projectsElements = [
     {
         id: 2,
         name: "MagicGit",
-        coverImg: img02,
+        coverImg: cover2,
         pictures: [],
         tech: ["Java", "JavaScript", "Bootstrap", "HTML5", "CSS"],
         summary:"blablaba2",
@@ -28,7 +29,7 @@ let projectsElements = [
     {
         id: 3,
         name: "Domino Local Server",
-        coverImg: "",
+        coverImg: cover3,
         pictures: [],
         tech: ["React", "NodeJS", "CSS"],
         summary:"blablaba3",
