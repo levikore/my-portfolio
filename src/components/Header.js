@@ -11,7 +11,7 @@ const skills = ["Junior Software Developer", "Junior Full-Stack Developer", "Jun
 
 const Header = () => {
     return (
-        <div className="header-wraper">
+        <div className="header-wraper" id="section-header">
             <div className="main-info">
                 <div className="hello-text-wraper">
                     <h3>Hi, I'm</h3>
@@ -26,16 +26,16 @@ const Header = () => {
                         loop
                     /> position
                 </p>
-                <a href="#" className="btn-main-offer">
+                <a href="#!" className="btn-main-offer">
                     <FontAwesomeIcon icon={faEnvelope} style={{ color: "#fff" }} /> Contact Me
                 </a>
 
                 <div className="social-media">
-                    <a href="https://www.linkedin.com/in/levi-korenblit/" className="btn-social-media">
+                    <a href="https://www.linkedin.com/in/levi-korenblit/" target="_blank" rel="noreferrer nofollow" className="btn-social-media">
                         <FontAwesomeIcon icon={faLinkedin} style={{ color: "#fff" }} />
                     </a>
 
-                    <a href="https://github.com/levikore" className="btn-social-media">
+                    <a href="https://github.com/levikore" target="_blank" rel="noreferrer nofollow" className="btn-social-media">
                         <FontAwesomeIcon icon={faGithub} style={{ color: "#fff" }} />
                     </a>
                 </div>

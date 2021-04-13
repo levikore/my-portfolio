@@ -4,7 +4,7 @@ let timelineElements = [
     title: "The Academic College of Tel Aviv- Yaffo",
     location: "Tel Aviv- Yaffo, Israel",
     description:
-      "BSc in computer science.",
+      "Bachelor's degree in computer science (BSc).",
     buttonText: "My Graduation Project",
     ref: "https://www.linkedin.com/feed/update/urn:li:activity:6718528220460814337/",
     date: "August 2016 - July 2021",
@@ -14,7 +14,8 @@ let timelineElements = [
     id: 2,
     title: "Israeli Air Force: Satcom Operator",
     location: "Israel",
-    description:"",
+    description:
+    "Operated satellite communication systems in the IAF Communications NOC. Experience with TCP/IP networking protocol.",
     buttonText: "",
     ref:"",
     date: "June 2013 - June 2016",

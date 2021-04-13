@@ -2,6 +2,9 @@ import React from "react";
 import Component from "./Component";
 import projectsElements from "../config/projectsElements";
 import paragraphContent from "../config/paragraphContent";
+//REACT FONT AWESOME IMPORT
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 import ProjectModal from "./ProjectModal";
@@ -48,8 +51,11 @@ class ProjectCard extends React.Component {
                         type="button"
                         className="btn btn-primary"
                         onClick={this.handleClick}>
-                        View
+                        More Info
                     </button>
+                    <a href={this.props.link} target="_blank" rel="noreferrer nofollow" className="btn-social-media">
+                        <FontAwesomeIcon icon={faExternalLinkAlt} style={{ color: "#000000" }} />
+                    </a>
                 </div>
             </div>
         );
@@ -67,6 +73,7 @@ const ProjectsGrid = () => {
                             name={element.name}
                             summary={element.summary}
                             tech={element.tech}
+                            link={element.links[0]}
                         />
                     );
                 })

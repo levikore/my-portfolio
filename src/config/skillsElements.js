@@ -1,6 +1,6 @@
 //REACT FONT AWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faJava, faCss3Alt,  faHtml5, faPython, faNode, faJsSquare, faGithubSquare} from "@fortawesome/free-brands-svg-icons";
+import { faReact, faJava, faCss3Alt,  faHtml5, faPython, faNode} from "@fortawesome/free-brands-svg-icons";
 
 let size = "3x";
 let skillsElements = [

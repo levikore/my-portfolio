@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faJava, faCss3Alt, faHtml5, faPython, faNode, faJsSquare, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-
 import cover1 from "./project-imgs/ParkGuard/cover.png"
 import cover2 from "./project-imgs/MagicGit/cover.png"
 import cover3 from "./project-imgs/DominoLocalServer/cover.png"
@@ -14,7 +11,7 @@ let projectsElements = [
         tech: ["Java", "Python", "OpenCV", "AWS S3"],
         summary:"blablaba",
         paragraph: "blablablaba",
-        links: [],
+        links: ["https://www.linkedin.com/posts/levi-korenblit_computerscience-iot-aws-activity-6718528220460814337-y6HF/"],
     },
     {
         id: 2,
@@ -24,7 +21,7 @@ let projectsElements = [
         tech: ["Java", "JavaScript", "Bootstrap", "HTML5", "CSS"],
         summary:"blablaba2",
         paragraph: "blablablaba2",
-        links: [],
+        links: ["https://github.com/levikore/MA_GIT_Java_Online"],
     },
     {
         id: 3,
@@ -34,7 +31,7 @@ let projectsElements = [
         tech: ["React", "NodeJS", "CSS"],
         summary:"blablaba3",
         paragraph: "blablablaba3",
-        links: [],
+        links: ["https://github.com/levikore/React_Domino_Local_Server"],
     },
 
 ];
