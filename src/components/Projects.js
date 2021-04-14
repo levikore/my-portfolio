@@ -18,7 +18,7 @@ class ProjectCard extends React.Component {
     }
 
     handleClick() {
-        
+
         this.setState(() => ({
             isShowModal: true
 
@@ -27,35 +27,37 @@ class ProjectCard extends React.Component {
 
     render() {
         return (
-            <div className="card" >
-                <div className="overflow">
-                    <img
-                        className="card-img-top"
-                        src={this.props.coverImg}
-                        alt="X"
-                    />
-                </div>
-                <div className="card-body">
-                    <h5 className="card-title">{this.props.name}</h5>
-                    <p className="card-text">
-                        {this.props.summary}
-                    </p>
-                    <div className="card-tech-grid">
-                        {
-                            this.props.tech.map((tech) => {
-                                return (<p key={tech} className="tech-item">{tech}</p>);
-                            })
-                        }
+            <div className="card-wraper">
+                <div className="card" >
+                    <div className="overflow">
+                        <img
+                            className="card-img-top"
+                            src={this.props.coverImg}
+                            alt="X"
+                        />
                     </div>
-                    <button
-                        type="button"
-                        className="btn btn-primary"
-                        onClick={this.handleClick}>
-                        More Info
+                    <div className="card-body">
+                        <h5 className="card-title">{this.props.name}</h5>
+                        <p className="card-text">
+                            {this.props.summary}
+                        </p>
+                        <div className="card-tech-grid">
+                            {
+                                this.props.tech.map((tech) => {
+                                    return (<p key={tech} className="tech-item">{tech}</p>);
+                                })
+                            }
+                        </div>
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            onClick={this.handleClick}>
+                            More Info
                     </button>
-                    <a href={this.props.link} target="_blank" rel="noreferrer nofollow" className="btn-social-media">
-                        <FontAwesomeIcon icon={faExternalLinkAlt} style={{ color: "#000000" }} />
-                    </a>
+                        <a href={this.props.link} target="_blank" rel="noreferrer nofollow" className="btn-social-media">
+                            <FontAwesomeIcon icon={faExternalLinkAlt} style={{ color: "#000000" }} />
+                        </a>
+                    </div>
                 </div>
             </div>
         );

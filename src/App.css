@@ -120,7 +120,6 @@ nav ul li {
     background-size: cover;
     background-position: center;
     height: var(--header-height);
-    /*box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;*/
 }
 
 .main-info {
@@ -520,6 +519,9 @@ and (orientation: landscape){
 }
 
 /************************Project Card*************************/
+.card-wraper{
+    padding:1rem;
+}
 
 .card{
     max-width:25rem;
@@ -554,24 +556,22 @@ and (orientation: landscape){
 
 .card-tech-grid{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0.1rem 80px;
-    font-size:0.9rem;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size:0.7rem;
     height: 8rem;
-    font-size: 15px;
 }
 
 .tech-item{
     text-align: center;
-    border-top: 0.5px solid #000000;
-    border-bottom: 0.5px solid #000000;
-    border-left:  0.5px solid #000000;
-    border-right:  0.5px solid #000000;;
-    background-color: rgb(33, 43, 61);
     color: rgb(255, 255, 255);
+    border-radius: var(--card-radius) !important;
+
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
 
 .overflow{
@@ -590,7 +590,10 @@ and (orientation: landscape){
     transform:scale(1.1);
 }
 
-@media only screen and (max-width: 1366px){
+@media only screen and (max-width: 1485px){
+    .card-wraper{
+        padding:0;
+    }
     .card-tech-grid{
         grid-template-columns: repeat(2, 1fr);
         padding: 0rem 50px;
