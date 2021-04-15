@@ -9,6 +9,15 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 import ProjectModal from "./ProjectModal";
 
+const ConditionalLinkButton = (props) => {
+    return (
+        props.link ?
+            <a href={props.link} target="_blank" rel="noreferrer nofollow" className="btn-external-link">
+                <FontAwesomeIcon icon={faExternalLinkAlt} style={{ color: "#2e2e2e", width: "0.6rem" }} />
+            </a> : ""
+    );
+}
+
 class ProjectCard extends React.Component {
     constructor(props) {
         super(props);
@@ -37,7 +46,10 @@ class ProjectCard extends React.Component {
                         />
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title">{this.props.name}</h5>
+                        <h5 className="card-title">
+                            {this.props.name}
+                            <ConditionalLinkButton link={this.props.link} />
+                        </h5>
                         <p className="card-text">
                             {this.props.summary}
                         </p>
@@ -54,9 +66,7 @@ class ProjectCard extends React.Component {
                             onClick={this.handleClick}>
                             More Info
                     </button>
-                        <a href={this.props.link} target="_blank" rel="noreferrer nofollow" className="btn-social-media">
-                            <FontAwesomeIcon icon={faExternalLinkAlt} style={{ color: "#000000" }} />
-                        </a>
+
                     </div>
                 </div>
             </div>
