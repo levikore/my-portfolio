@@ -228,72 +228,6 @@ nav ul li {
     z-index: 1;
 }
 
-/********************COMPONENT***************************************/
-.component-wrapper{
-    position: relative;
-    background-position: center;
-    background-size:cover;
-    background-image: #fdfbfb;
-
-    padding-top: 60px;
-}
-
-.component-content{
-    display: flex;
-    position: static;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-    z-index: 1;
-}
-
-.component-title-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 1.5rem;
-}
-
-.component-title{
-    margin:0;
-    text-align: center;
-}
-
-.component-title::after{
-    content: "\A....";
-    white-space: pre;
-}
-
-.component-body-area{
-    width: 100% !important;
-    display: inline-block;
-
-    /*old background*/
-    /*background: var(--primary-blue);*/
-
-    /*new background, IS IT GOOD????*/
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #5db6ab 100%);
-    /*-------------------*/
-
-    font-size: 16px;
-    color: rgb(53, 53, 53);
-    /*box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;*/
-}
-
-
-.component-button{/**Note: use for buttons, doesnt apply to timelene and header buttons */
-    border-radius: 5px;
-    color: var(--primary-white);
-    margin: 0.5rem;
-    
-    transition: all .2s ease-in-out;
-}
-
 @media only screen 
 and (max-width: 48rem) {
     .navbar-brand {
@@ -358,6 +292,78 @@ and (orientation: landscape){
        
     }
 
+}
+
+/********************COMPONENT***************************************/
+.component-wrapper{
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-image: #fdfbfb;
+
+    padding-top: 60px;
+
+    padding-left: 0.5rem;
+    padding-right:0.5rem;
+}
+
+.component-content{
+    display: flex;
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    z-index: 1;
+}
+
+.component-title-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.component-title{
+    margin:0;
+    text-align: center;
+}
+
+.component-title::after{
+    content: "\A....";
+    white-space: pre;
+}
+
+.component-body-area{
+    width: 100% !important;
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #5db6ab 100%);
+ 
+
+    border-radius: 50px 15px;
+}
+
+
+.component-button{/**Note: use for buttons, doesnt apply to timelene and header buttons */
+    border-radius: 5px;
+    color: var(--primary-white);
+    margin: 0.5rem;
+    
+    transition: all .2s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+    .component-wrapper{
+        padding-left: 0;
+        padding-right:0;
+    }
 }
 
 /************************TIMELINE*************************/
@@ -611,6 +617,18 @@ and (orientation: landscape){
         font-size:0.7rem;
     }
 }
+
+
+
+
+.display-block {
+    display: block;
+    z-index: 50;
+  }
+  
+  .display-none {
+    display: none;
+  }
 
 
     

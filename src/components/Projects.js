@@ -21,18 +21,8 @@ const ConditionalLinkButton = (props) => {
 class ProjectCard extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isShowModal: false };
-
-        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick() {
-
-        this.setState(() => ({
-            isShowModal: true
-
-        }));
-    }
 
     render() {
         return (
@@ -63,7 +53,9 @@ class ProjectCard extends React.Component {
                         <button
                             type="button"
                             className="btn btn-primary"
-                            onClick={this.handleClick}>
+                            onClick={this.props.handleButtonClick}
+                            data-toggle="modal"
+                            data-target="#exampleModal">
                             More Info
                     </button>
 
@@ -74,25 +66,44 @@ class ProjectCard extends React.Component {
     }
 }
 
-const ProjectsGrid = () => {
-    return (
-        <div className="skills-container">
-            {
-                projectsElements.map((element) => {
-                    return (
-                        <ProjectCard key={element.name}
-                            coverImg={element.coverImg}
-                            name={element.name}
-                            summary={element.summary}
-                            tech={element.tech}
-                            link={element.links[0]}
-                        />
-                    );
-                })
-            }
-        </div>
 
-    );
+class ProjectsGrid extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            requiredItem: 0
+        };
+
+        this.replaceModalItem = this.replaceModalItem.bind(this);
+    }
+
+    replaceModalItem(index) {
+        this.setState({
+            requiredItem: index
+        });
+    }
+
+    render() {
+        return (
+            <div className="skills-container">
+                {
+                    projectsElements.map((element, index) => {
+                        return (
+                            <ProjectCard key={index}
+                                coverImg={element.coverImg}
+                                name={element.name}
+                                summary={element.summary}
+                                tech={element.tech}
+                                link={element.links[0]}
+                                handleButtonClick= {()=>this.replaceModalItem(index)}
+                            />
+                        );
+                    })
+                }
+            </div>
+
+        );
+    }
 }
 
 
