@@ -10,7 +10,7 @@ let projectsElements = [
         pictures: [],
         tech: ["Java", "Python", "OpenCV", "AWS-S3"],
         summary:"blablaba",
-        paragraph: "blablablaba",
+        paragraph: "prprprprprprprpr",
         links: ["https://www.linkedin.com/posts/levi-korenblit_computerscience-iot-aws-activity-6718528220460814337-y6HF/"],
     },
     {
@@ -20,7 +20,7 @@ let projectsElements = [
         pictures: [],
         tech: ["Java", "JavaScript", "HTML5", "CSS"],
         summary:"blablaba2",
-        paragraph: "blablablaba2",
+        paragraph: "prprprprprprprprprpr2",
         links: ["https://github.com/levikore/MA_GIT_Java_Online"],
     },
     {
@@ -30,7 +30,7 @@ let projectsElements = [
         pictures: [],
         tech: ["React", "NodeJS", "CSS"],
         summary:"blablaba3",
-        paragraph: "blablablaba3",
+        paragraph: "prprprprprprprprpr3",
         links: ["https://github.com/levikore/React_Domino_Local_Server"],
     },
 

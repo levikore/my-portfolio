@@ -618,17 +618,4 @@ and (orientation: landscape){
     }
 }
 
-
-
-
-.display-block {
-    display: block;
-    z-index: 50;
-  }
-  
-  .display-none {
-    display: none;
-  }
-
-
     
