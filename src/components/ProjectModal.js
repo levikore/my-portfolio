@@ -1,6 +1,6 @@
 import React from "react";
 
-import cover1 from "../config/project-imgs/DominoLocalServer/cover.png"
+import cover1 from "../config/project-imgs/DominoOnline/cover.png"
 import cover2 from "../config/project-imgs/MagicGit/cover.png"
 import cover3 from "../config/project-imgs/ParkGuard/cover.png"
 
