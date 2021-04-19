@@ -8,6 +8,7 @@
     --primary-red: #ef4035;
     --primary-hover-red: #f33501;
     --primary-blue:#3da3d5;
+    --faded-blue: rgb(167, 203, 221);
     --secondary-blue:rgb(201, 251, 255);
     --header-height: 93vh;
     --card-radius: 25px;
@@ -619,5 +620,51 @@ and (orientation: landscape){
         font-size:0.7rem;
     }
 }
+
+/***********************Project Modal******************************/
+.modal{
+    font-family: "Roboto Condensed", sans-serif !important;
+}
+
+#modal-paragraph{
+    margin: 0.1rem;
+    color:black;
+    font-size: 1.5rem;
+    
+}
+
+.carousel-container{
+    padding-bottom: 2rem;
+    box-shadow: 0 0 0.6 0 rgba(0, 0, 0, 0.25) !important;
+}
+
+/************************Project Carousel*************************/
+.rec.rec-arrow {
+    background-color: var(--faded-blue);
+    color: black !important;
+}
+
+.rec.rec-arrow:hover {
+    background-color: var(--primary-blue) !important;
+}
+
+.rec.rec-arrow:disabled {
+    background-color: var(--faded-blue) !important;
+    color: rgb(150, 150, 150) !important;
+}
+
+.rec.rec-arrow:focus{
+    background-color: var(--primary-blue) !important;
+}
+
+.rec.rec-dot_active{
+    box-shadow: 0 0 1px 3px var(--primary-blue) !important;
+    background-color: var(--faded-blue)  !important;
+}
+
+.rec.rec-dot:hover{
+    box-shadow: 0 0 1px 3px var(--faded-blue) !important;
+}
+
 
     

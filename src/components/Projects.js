@@ -1,13 +1,12 @@
 import React from "react";
 import Component from "./Component";
+import ProjectModal from "./ProjectModal";
 import projectsElements from "../config/projectsElements";
 import paragraphContent from "../config/paragraphContent";
 //REACT FONT AWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-
-import ProjectModal from "./ProjectModal";
 
 const ConditionalLinkButton = (props) => {
     return (
@@ -103,6 +102,7 @@ class ProjectsGrid extends React.Component {
                     paragraph={projectsElements[this.state.requiredItem].paragraph}
                     pictures={projectsElements[this.state.requiredItem].pictures}
                     links={projectsElements[this.state.requiredItem].links}
+                    images= {projectsElements[this.state.requiredItem].pictures}
                 />
             </>
         );
