@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-
+import Contact from "./components/Contact";
 import ProjectModal from "./components/ProjectModal";
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       <Skills/>
       <Projects/>
       <ProjectModal/>
+      <Contact/>
     </>
   );
 }

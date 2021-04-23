@@ -94,7 +94,7 @@ nav ul li {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
     color: var(--primary-white) !important;
-    border-top: .1875rem solid var(--primary-dark);
+    border-bottom: .1875rem solid var(--primary-dark);
 }
 
 .navbar-brand {
@@ -105,14 +105,12 @@ nav ul li {
 
 .navbar-nav>li>a.active,
 .navbar-nav>li>a.active:focus {
-    border-top: .1875rem solid var(--primary-green);
+    border-bottom: .1875rem solid var(--primary-green);
 }
 
 .navbar-nav>li>a:hover {
-    border-top: .1875rem solid var(--primary-green);
+    border-bottom: .1875rem solid var(--primary-green);
 }
-
-
 /********************HEADER***************************************/
 
 .header-wraper {
@@ -218,6 +216,24 @@ nav ul li {
     opacity: 0.8;
     position: absolute;
     bottom: 0;
+
+    border-radius: 40%;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.90);	
+	}
+
+	70% {
+		transform: scale(1);	
+	}
+
+	100% {
+		transform: scale(0.90);	
+	}
 }
 
 /*----------------PARTICLES JS----------------*/
@@ -348,7 +364,7 @@ and (orientation: landscape){
     background-image: linear-gradient(160deg, #0093E9 0%, #5db6ab 100%);
  
 
-    border-radius: 50px 15px;
+    border-radius: var(--card-radius);
 }
 
 
@@ -375,6 +391,7 @@ and (orientation: landscape){
 .vertical-timeline-element-content {
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
     padding: 2em 3em !important;
+    border-radius: 15px !important;
   }
 
   .timeline-date {
@@ -532,6 +549,7 @@ and (orientation: landscape){
 
 .card{
     max-width:25rem;
+    min-height:664px;
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.3) !important;
     transition: transform 0.5s ease;
     border-radius: var(--card-radius) !important;
@@ -635,7 +653,6 @@ and (orientation: landscape){
 
 .carousel-container{
     padding-bottom: 2rem;
-    box-shadow: 0 0 0.6 0 rgba(0, 0, 0, 0.25) !important;
 }
 
 /************************Project Carousel*************************/
@@ -666,5 +683,32 @@ and (orientation: landscape){
     box-shadow: 0 0 1px 3px var(--faded-blue) !important;
 }
 
+/************************Contact*************************/
+.contact-wrapper{
+    margin-top:1rem;
+    padding-top: 60px !important;
+
+    height: fit-content;
+
+}
+
+.contact-content{
+    font-family: "Roboto Condensed", sans-serif;
+    color:var(--primary-white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+
+}
+
+@media only screen and (max-width: 1485px){
+    .form-wrapper{
+        width:80%;
+    }
+}
 
     

@@ -26,7 +26,7 @@ const Header = () => {
                         loop
                     /> position
                 </p>
-                <a href="#!" className="btn-main-offer">
+                <a href="#contact" className="btn-main-offer">
                     <FontAwesomeIcon icon={faEnvelope} style={{ color: "#fff" }} /> Contact Me
                 </a>
 
