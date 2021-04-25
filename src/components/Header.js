@@ -7,25 +7,25 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const skills = ["Junior Software Developer", "Junior Full-Stack Developer", "Junior Web Developer"];
+const skills = ["React", "JavaScript", "NodeJS", "HTML5", "CSS3", "C#", "C++", "Python", "Git"];
 
 const Header = () => {
     return (
         <div className="header-wraper" id="section-header">
             <div className="main-info">
-                <div className="hello-text-wraper">
-                    <h3>Hi, I'm</h3>
-                    <h1>Levi Korenblit</h1>
-                </div>
+
+                <h1>Levi Korenblit</h1>
+
                 <p className="typed-wrap">
-                    Looking for a <Typed
+                    Software Developer  <Typed
                         className="typed-text"
                         strings={skills}
-                        typeSpeed={100}
-                        backSpeed={60}
+                        typeSpeed={150}
+                        backSpeed={90}
                         loop
-                    /> position
+                    /> ...
                 </p>
+                <h3>Got Work For Me?</h3>
                 <a href="#contact" className="btn-main-offer">
                     <FontAwesomeIcon icon={faEnvelope} style={{ color: "#fff" }} /> Contact Me
                 </a>
@@ -40,9 +40,9 @@ const Header = () => {
                     </a>
                 </div>
 
-                <div className="arrow-down">
+                <a href="#section-about-me" className="arrow-down">
                     <FontAwesomeIcon icon={faChevronDown} style={{ color: "#fff" }} />
-                </div>
+                </a>
             </div>
         </div>
     )

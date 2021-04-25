@@ -4,10 +4,11 @@
     --primary-green: #56fd3c;
     --secondary-green: #06d6a0;
     --secondary-hover-green:#0ac593;
+    --background-green: #5db6ab;
     --primary-dark: rgba(255, 255, 255, 0);
     --primary-red: #ef4035;
     --primary-hover-red: #f33501;
-    --primary-blue:#3da3d5;
+    --primary-blue:#0093E9;
     --faded-blue: rgb(167, 203, 221);
     --secondary-blue:rgb(201, 251, 255);
     --header-height: 93vh;
@@ -136,11 +137,6 @@ nav ul li {
     z-index: 1;
 }
 
-.hello-text-wraper{
-    display: flex;
-    flex-direction: column;
-}
-
 .main-info h3 {
     color: var(--secondary-green);
 }
@@ -151,6 +147,7 @@ nav ul li {
     font-weight: bold;
     font-size: 80px;
 }
+
 
 /*----------------TYPED TEXT----------------*/
 
@@ -216,6 +213,7 @@ nav ul li {
     opacity: 0.8;
     position: absolute;
     bottom: 0;
+    z-index: 1;
 
     border-radius: 40%;
 	transform: scale(1);
@@ -224,7 +222,7 @@ nav ul li {
 
 @keyframes pulse {
 	0% {
-		transform: scale(0.90);	
+		transform: scale(0.75);	
 	}
 
 	70% {
@@ -232,7 +230,7 @@ nav ul li {
 	}
 
 	100% {
-		transform: scale(0.90);	
+		transform: scale(0.75);	
 	}
 }
 
@@ -360,8 +358,8 @@ and (orientation: landscape){
     font-size: 16px;
     color: rgb(53, 53, 53);
 
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #5db6ab 100%);
+    background-color: var(--primary-blue);
+    background-image: linear-gradient(160deg, var(--primary-blue) 0%, var(--background-green) 100%);
  
 
     border-radius: var(--card-radius);

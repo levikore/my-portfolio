@@ -59,7 +59,7 @@ const ContactForm = () => {
 
                 </form>
 
-                <div className="text-center text-md-right">
+                <div className="text-center text-md">
                     <a className="btn btn-primary" href="#!">Send</a>
                 </div>
                 <div className="status"></div>
