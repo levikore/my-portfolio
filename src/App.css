@@ -112,6 +112,14 @@ nav ul li {
 .navbar-nav>li>a:hover {
     border-bottom: .1875rem solid var(--primary-green);
 }
+
+@media only screen 
+and (max-width: 48rem) {
+    .navbar-brand {
+        width: 7rem;
+    }
+}
+
 /********************HEADER***************************************/
 
 .header-wraper {
@@ -146,6 +154,10 @@ nav ul li {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 80px;
+}
+
+.smaller-on-phone{
+    transform: scale(1);
 }
 
 
@@ -235,7 +247,6 @@ nav ul li {
 }
 
 /*----------------PARTICLES JS----------------*/
-
 .particles-canvas {
     position: absolute;
     height: var(--header-height);
@@ -243,68 +254,36 @@ nav ul li {
     z-index: 1;
 }
 
+    
 @media only screen 
-and (max-width: 48rem) {
-    .navbar-brand {
-        width: 7rem;
-    }
-    .main-info h3 {
-        font-size: 0.9rem !important;
-    }
+and (max-width: 767px) {
+
     .main-info h1 {
-        font-size: 1.7rem !important;
+        font-size: 50px !important;
     }
-    .typed-wrap {
-        font-size: 1rem !important;
+
+    .smaller-on-phone{
+        font-size: 6vw !important ;
     }
-    .typed-text::before {
-        content: "\A";
-        white-space: pre;
-    }
-    .typed-text {
-        font-size: 1.2rem !important;
-    }
-    .typed-text::after {
-        content: "\A";
-        white-space: pre;
-    }
-    .btn-main-offer {
-        margin: 0.5rem !important;
-    }
+
     .particles-canvas {
         display: none;
+    }
+
+    .btn-main-offer{
+        padding: 0.1rem 0.15rem 0.15rem 0.15rem !important;   
     }
 }
 
 @media only screen 
-and (max-device-width: 823px) 
+and (max-width: 822px)
 and (orientation: landscape){
-    .hello-text-wraper{
-        flex-direction: row;
-    }
-
-    .main-info h1 {
-        font-size: 1.2rem !important;
-    }
-
-    .typed-wrap {
-        font-size: 0.8rem !important;
-    }
-    .typed-text::before {
-        content: "\A";
-        white-space: nowrap;
-    }
-    .typed-text {
-        font-size: 0.9rem !important;
-    }
-    .typed-text::after {
-        content: "\A";
-        white-space: nowrap;
-    }
     .btn-main-offer{
-        padding: 0.1rem 0.15rem 0.15rem 0.15rem;
-        color: var(--primary-white);
-       
+        padding: 0.1rem 0.15rem 0.15rem 0.15rem; 
+    }
+
+    .smaller-on-phone{
+        font-size: 25px !important ;
     }
 
 }

@@ -14,9 +14,9 @@ const Header = () => {
         <div className="header-wraper" id="section-header">
             <div className="main-info">
 
-                <h1>Levi Korenblit</h1>
+                <h1 className="smaller-on-phone">Levi Korenblit</h1>
 
-                <p className="typed-wrap">
+                <p className="typed-wrap smaller-on-phone">
                     Software Developer  <Typed
                         className="typed-text"
                         strings={skills}
@@ -25,12 +25,12 @@ const Header = () => {
                         loop
                     /> ...
                 </p>
-                <h3>Got Work For Me?</h3>
-                <a href="#contact" className="btn-main-offer">
+                <h3 className="smaller-on-phone">Got Work For Me?</h3>
+                <a href="#contact" className="btn-main-offer smaller-on-phone">
                     <FontAwesomeIcon icon={faEnvelope} style={{ color: "#fff" }} /> Contact Me
                 </a>
 
-                <div className="social-media">
+                <div className="social-media smaller-on-phone">
                     <a href="https://www.linkedin.com/in/levi-korenblit/" target="_blank" rel="noreferrer nofollow" className="btn-social-media">
                         <FontAwesomeIcon icon={faLinkedin} style={{ color: "#fff" }} />
                     </a>
@@ -40,7 +40,7 @@ const Header = () => {
                     </a>
                 </div>
 
-                <a href="#section-about-me" className="arrow-down">
+                <a href="#section-about-me" className="arrow-down smaller-on-phone">
                     <FontAwesomeIcon icon={faChevronDown} style={{ color: "#fff" }} />
                 </a>
             </div>
