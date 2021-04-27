@@ -682,6 +682,10 @@ and (orientation: landscape){
 
 }
 
+.form-wrapper{
+    padding-bottom: 0.9rem;
+}
+
 @media only screen and (max-width: 1485px){
     .form-wrapper{
         width:80%;

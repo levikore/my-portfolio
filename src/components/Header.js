@@ -9,6 +9,20 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const skills = ["React", "JavaScript", "NodeJS", "HTML5", "CSS3", "C#", "C++", "Python", "Git"];
 
+const SocialMedia = () => {
+    return (
+        <div className="social-media smaller-on-phone">
+            <a href="https://www.linkedin.com/in/levi-korenblit/" target="_blank" rel="noreferrer nofollow" className="btn-social-media">
+                <FontAwesomeIcon icon={faLinkedin} style={{ color: "#fff" }} />
+            </a>
+
+            <a href="https://github.com/levikore" target="_blank" rel="noreferrer nofollow" className="btn-social-media">
+                <FontAwesomeIcon icon={faGithub} style={{ color: "#fff" }} />
+            </a>
+        </div>
+    );
+}
+
 const Header = () => {
     return (
         <div className="header-wraper" id="section-header">
@@ -30,15 +44,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faEnvelope} style={{ color: "#fff" }} /> Contact Me
                 </a>
 
-                <div className="social-media smaller-on-phone">
-                    <a href="https://www.linkedin.com/in/levi-korenblit/" target="_blank" rel="noreferrer nofollow" className="btn-social-media">
-                        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#fff" }} />
-                    </a>
-
-                    <a href="https://github.com/levikore" target="_blank" rel="noreferrer nofollow" className="btn-social-media">
-                        <FontAwesomeIcon icon={faGithub} style={{ color: "#fff" }} />
-                    </a>
-                </div>
+                <SocialMedia/>
 
                 <a href="#section-about-me" className="arrow-down smaller-on-phone">
                     <FontAwesomeIcon icon={faChevronDown} style={{ color: "#fff" }} />
@@ -48,4 +54,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export {Header, SocialMedia};
