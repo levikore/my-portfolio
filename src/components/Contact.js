@@ -1,5 +1,5 @@
 import React from "react";
-import {SocialMedia} from "./Header";
+import { SocialMedia } from "./Header";
 
 
 const PersonalInfo = (giveInfo = false) => {
@@ -27,13 +27,13 @@ const ContactForm = () => {
 
             <div className="col-md-12 mb-md-0 mb-5">
                 <form id="contact-form" name="contact-form" action="/contact-form" method="POST" >
-
+                    <input type="hidden" name="form-name" value="contact-form" />
 
                     <div className="row">
 
                         <div className="col-md-6">
                             <div className="md-form mb-0">
-                                <input type="text" id="name" name="name" className="form-control" required/>
+                                <input type="text" id="name" name="name" className="form-control" required />
                                 <label htmlFor="name" className="">Your name</label>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const ContactForm = () => {
 
                         <div className="col-md-6">
                             <div className="md-form mb-0">
-                                <input type="text" id="email" name="email" className="form-control" required/>
+                                <input type="text" id="email" name="email" className="form-control" required />
                                 <label htmlFor="email" className="">Your email</label>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ const ContactForm = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="md-form mb-0">
-                                <input type="text" id="subject" name="subject" className="form-control" required/>
+                                <input type="text" id="subject" name="subject" className="form-control" required />
                                 <label htmlFor="subject" className="">Subject</label>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                     <p>I'm looking for work!!!!</p>
                 </div>
                 <div className="form-wrapper"><ContactForm /></div>
-                <SocialMedia/>
+                <SocialMedia />
             </div>
         </div>
     )
