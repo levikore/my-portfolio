@@ -1,98 +1,100 @@
 import React from "react";
 import { SocialMedia } from "./Header";
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
-const PersonalInfo = (giveInfo = false) => {
-    return (
-        <ul className="list-unstyled mb-0">
-            <li><i className="fas fa-map-marker-alt fa-2x"></i>
-                <p>San Francisco, CA 94126, USA</p>
-            </li>
+class ContactForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { name: "", email: "", subject: "", message: "" }
+    }
 
-            <li><i className="fas fa-phone mt-4 fa-2x"></i>
-                <p>+ 01 234 567 89</p>
-            </li>
+    handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact-form", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+    
+        e.preventDefault();
+    };
 
-            <li><i className="fas fa-envelope mt-4 fa-2x"></i>
-                <p>contact@mdbootstrap.com</p>
-            </li>
-        </ul>
-    );
-}
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-const ContactForm = () => {
-    return (
-        <div className="row">
+    render() {
+        const { name, email, subject, message } = this.state;
+        return (
+            <div className="row">
 
 
-            <div className="col-md-12 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="/contact-form" method="POST" >
-                    <input type="hidden" name="form-name" value="contact-form" />
+                <div className="col-md-12 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" onSubmit={this.handleSubmit} >
+                        <input type="hidden" name="form-name" value="contact-form" />
 
-                    <div className="row">
+                        <div className="row">
 
-                        <div className="col-md-6">
-                            <div className="md-form mb-0">
-                                <input type="text" id="name" name="name" className="form-control" required />
-                                <label htmlFor="name" className="">Your name</label>
+                            <div className="col-md-6">
+                                <div className="md-form mb-0">
+                                    <input type="text" id="name" name="name" className="form-control" value={name} onChange={this.handleChange} required />
+                                    <label htmlFor="name" className="">Your name</label>
+                                </div>
+                            </div>
+
+
+
+                            <div className="col-md-6">
+                                <div className="md-form mb-0">
+                                    <input type="text" id="email" name="email" className="form-control" value={email} onChange={this.handleChange} required />
+                                    <label htmlFor="email" className="">Your email</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" className="form-control" value={subject} onChange={this.handleChange} required />
+                                    <label htmlFor="subject" className="">Subject</label>
+                                </div>
                             </div>
                         </div>
 
 
 
-                        <div className="col-md-6">
-                            <div className="md-form mb-0">
-                                <input type="text" id="email" name="email" className="form-control" required />
-                                <label htmlFor="email" className="">Your email</label>
+                        <div className="row">
+
+
+                            <div className="col-md-12">
+
+                                <div className="md-form">
+                                    <textarea type="text" id="message" name="message" rows="5" className="form-control md-textarea" value={message} onChange={this.handleChange} required></textarea>
+                                    <label htmlFor="message">Your message</label>
+                                </div>
+
                             </div>
                         </div>
 
 
+                    </form>
+
+                    <div className="text-center text-md-right">
+                        <button className="btn btn-primary" type="submit">Submit</button>
                     </div>
-
-
-
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="md-form mb-0">
-                                <input type="text" id="subject" name="subject" className="form-control" required />
-                                <label htmlFor="subject" className="">Subject</label>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div className="row">
-
-
-                        <div className="col-md-12">
-
-                            <div className="md-form">
-                                <textarea type="text" id="message" name="message" rows="5" className="form-control md-textarea" required></textarea>
-                                <label htmlFor="message">Your message</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </form>
-
-                <div className="text-center text-md-right">
-                    <a className="btn btn-primary" type="submit">Send</a>
+                    <div className="status"></div>
                 </div>
-                <div className="status"></div>
             </div>
-
-
-
-            <div className="col-md-3 text-center">
-            </div>
-
-
-        </div>
-    );
+        );
+    }
 }
 
 const Contact = () => {
