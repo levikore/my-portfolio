@@ -80,7 +80,7 @@ const ContactForm = () => {
                 </form>
 
                 <div className="text-center text-md-right">
-                    <a className="btn btn-primary" href="#!">Send</a>
+                    <a className="btn btn-primary" type="submit">Send</a>
                 </div>
                 <div className="status"></div>
             </div>
