@@ -16,6 +16,8 @@ const Contact = () => {
                 <p
                     style={{ fontSize: "0.7rem", padding:"0.5rem" }}>This website was made by me using React, CSS3 with multiple React libraries and toolkits, such as: Bootstrap, vertical timeline etc. You can check out the code...
                     <a href="https://github.com/levikore/my-portfolio" target="_blank" rel="noreferrer nofollow">here</a>.
+                    FontAwsome icons were used on this website and on my cv, license
+                    <a href="https://fontawesome.com/license" target="_blank" rel="noreferrer nofollow">here</a>.
                 </p>
             </div>
         </div>
