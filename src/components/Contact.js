@@ -35,8 +35,6 @@ class ContactForm extends React.Component {
 
                 <div className="col-md-12 mb-md-0 mb-5">
                     <form id="contact-form" name="contact-form" onSubmit={this.handleSubmit} >
-                        <input type="hidden" name="form-name" value="contact-form" />
-
                         <div className="row">
 
                             <div className="col-md-6">
@@ -83,8 +81,6 @@ class ContactForm extends React.Component {
 
                             </div>
                         </div>
-
-
                     </form>
 
                     <div className="text-center text-md-right">
