@@ -5,7 +5,7 @@ const encode = (data) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
-  }
+}
 
 class ContactForm extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class ContactForm extends React.Component {
         })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
-    
+
         e.preventDefault();
     };
 
@@ -34,7 +34,7 @@ class ContactForm extends React.Component {
 
 
                 <div className="col-md-12 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" >
+                    <form id="contact-form" name="contact-form" onSubmit={this.handleSubmit}>
                         <div className="row">
 
                             <div className="col-md-6">
@@ -81,11 +81,11 @@ class ContactForm extends React.Component {
 
                             </div>
                         </div>
-                    </form>
 
-                    <div className="text-center text-md-right">
-                        <button className="btn btn-primary" type="submit" onClick={this.handleSubmit} >Send</button>
-                    </div>
+                        <div className="text-center text-md-right">
+                            <button className="btn btn-primary" type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         );
