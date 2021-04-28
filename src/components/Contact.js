@@ -88,9 +88,8 @@ class ContactForm extends React.Component {
                     </form>
 
                     <div className="text-center text-md-right">
-                        <button className="btn btn-primary" type="submit">Submit</button>
+                        <button className="btn btn-primary" type="submit">Send</button>
                     </div>
-                    <div className="status"></div>
                 </div>
             </div>
         );
