@@ -90,9 +90,7 @@ class ContactForm extends React.Component {
                                 </div>
 
                             </div>
-                        </div>
-
-                        <div data-netlify-recaptcha="true"></div>
+                        </div>                      
 
                         <div className="text-center text-md-right">
                             <button className="btn btn-primary" type="submit">Send</button>

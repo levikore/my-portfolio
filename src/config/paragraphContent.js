@@ -5,8 +5,10 @@ let paragraphContent =
     I enjoy learning new technologies and can adapt to any task at hand by applying 
     creative solutions.
     I am fluent in English, Hebrew and Russian.`,
-    skills: `Witness my skills Mortals!!!!!!!!!!!!!!!!`,
-    projects: `Witness my projects Mortals!!!`,
+    skills: `I have experiance with: React, JavaScript, NodeJS,  HTML5, CSS3, C#, Python, C++, Unity, OOP, Multithreading.
+    Here are some examples of how I use my skills:`,
+    projects: `Here are some of the projects I have done, you can check out more projects on my GitHub.`,
+    contact:`Contact me via Linkedin or via this form:`,
 };
 
 export default paragraphContent;
