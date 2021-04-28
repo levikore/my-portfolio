@@ -31,28 +31,4 @@ class ProjectCarousel extends React.Component {
     }
 }
 
-/*
-const ProjectCarousel = (props) => {
-    console.log(props.images);
-    return (
-        typeof props.images !== "undefined" ?
-     
-        <div>
-            <Carousel itemsToShow={1} initialActiveIndex={1}>
-                {
-                    props.images.map((image, index) => {
-                        return <img key={index}
-                            className="carousel-image"
-                            src={image}
-                            alt="..." />
-
-                    })
-                }
-
-            </Carousel>
-        </div> : ""
-    );
-}
-*/
-
 export default ProjectCarousel;

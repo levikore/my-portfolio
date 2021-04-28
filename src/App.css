@@ -76,7 +76,7 @@ nav {
 
 .logo {
     width: 8rem;
-    /*16.25rem*/
+    /*8rem*/
 }
 /*----------------MENU LINKS----------------*/
 
@@ -624,7 +624,7 @@ and (orientation: landscape){
 #modal-paragraph{
     margin: 0.1rem;
     color:black;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     
 }
 
