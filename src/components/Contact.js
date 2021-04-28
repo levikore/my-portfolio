@@ -34,7 +34,7 @@ class ContactForm extends React.Component {
 
 
                 <div className="col-md-12 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" onSubmit={this.handleSubmit} >
+                    <form id="contact-form" name="contact-form" >
                         <div className="row">
 
                             <div className="col-md-6">
@@ -84,7 +84,7 @@ class ContactForm extends React.Component {
                     </form>
 
                     <div className="text-center text-md-right">
-                        <button className="btn btn-primary" type="submit">Send</button>
+                        <button className="btn btn-primary" type="submit" onClick={this.handleSubmit} >Send</button>
                     </div>
                 </div>
             </div>
